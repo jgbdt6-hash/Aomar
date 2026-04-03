@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر شحن البرامج والألعاب</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🛒 متجر شحن البرامج والألعاب</h1>
+        <p>اختر المنتج الذي تريد شراءه:</p>
+
+        <div class="products">
+            <!-- المنتج 1 -->
+            <div class="product">
+                <h3>🎮 شحن ببجي PUBG</h3>
+                <p>شحن فوري لـ 600 UC</p>
+                <span class="price">5$</span>
+                <button onclick="addToCart('ببجي - 600 UC', 5)">أضف للسلة</button>
+            </div>
+
+            <!-- المنتج 2 -->
+            <div class="product">
+                <h3>💎 شحن فري فاير Free Fire</h3>
+                <p>1000 ماسة + هدية</p>
+                <span class="price">10$</span>
+                <button onclick="addToCart('فري فاير - 1000 ماسة', 10)">أضف للسلة</button>
+            </div>
+
+            <!-- المنتج 3 -->
+            <div class="product">
+                <h3>📱 شحن تيك توك TikTok</h3>
+                <p>500 عملة تيك توك</p>
+                <span class="price">7$</span>
+                <button onclick="addToCart('تيك توك - 500 عملة', 7)">أضف للسلة</button>
+            </div>
+
+            <!-- المنتج 4 -->
+            <div class="product">
+                <h3>🎬 اشتراك نتفلكس Netflix</h3>
+                <p>شهر واحد - جودة 4K</p>
+                <span class="price">12$</span>
+                <button onclick="addToCart('نتفلكس - شهر', 12)">أضف للسلة</button>
+            </div>
+        </div>
+
+        <!-- سلة المشتريات -->
+        <div class="cart">
+            <h2>🛍️ سلة المشتريات</h2>
+            <ul id="cart-items"></ul>
+            <p>المجموع: <span id="total">0</span> $</p>
+            <button onclick="checkout()">💳 إتمام الشراء</button>
+            <button onclick="clearCart()">🗑️ تفريغ السلة</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
